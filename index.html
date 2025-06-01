@@ -9,11 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Frontend Mentor | News homepage</title>
-    <script type="module" crossorigin src="/news-homepage/assets/index-Dg5r8nXY.js"></script>
-    <link rel="stylesheet" crossorigin href="/news-homepage/assets/index-DIywnxfR.css">
+    <script type="module" crossorigin src="/news-homepage/assets/index-CNUi9gYA.js"></script>
+    <link rel="stylesheet" crossorigin href="/news-homepage/assets/index-CGQk7T7c.css">
   </head>
   <body>
-    <!-- <div id="app"></div> -->
+    <div class="app">
       <header>
         <img src="/news-homepage/images/logo.svg" alt="logo" />
         <button
@@ -22,10 +22,10 @@
           aria-controls="navbar"
           aria-label="open the menu"
         >
-        <img 
-          src="/news-homepage/images/icon-menu.svg" 
-          alt="icon to open the navigation menu" 
-          />
+          <img 
+            src="/news-homepage/images/icon-menu.svg" 
+            alt="icon to open the navigation menu" 
+            />
         </button>
         <nav 
           id="navbar" 
@@ -34,7 +34,7 @@
           <div class="lightbox flex flex-col">
             <button
               id="nav-close-icon" 
-              class="nav-close-icon"
+              class="nav-close-icon hidden"
               aria-controls="navbar"
               aria-label="close the menu"
             >
@@ -65,41 +65,41 @@
           The Bright Future of Web 3.0?
         </h1>
         <div class="featured-article-caption">
-          <p class="text-gray-700">
+          <p class="text-navy-600">
             We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
             people.
             But is it really fulfilling its promise?
           </p>
           <div class="my-4">
-            <button class="read-more bg-red-500 text-gray-900 text-sm px-4 py-2">
+            <button class="read-more bg-red-500 text-navy-950 text-sm px-4 py-2">
               Read more
             </button>
           </div>
         </div>
       </section>
       
-      <section class="new-articles bg-slate-900 text-white flex flex-col gap-2 p-4">
+      <section class="new-articles bg-navy-950 flex flex-col gap-2 p-4">
         <div class="text-2xl text-gold-400 font-bold">New</div>
         <article class="new-article py-2">
-          <a href="#" class="text-2xl my-2">
+          <a href="#" class="text-xl font-extrabold text-white my-2">
             Hydrogen VS Electric Cars
           </a>
           <p class="text-gray-300">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
         </article>
-        <hr>
+        <hr class="text-white opacity-25 my-4">
         <article class="new-article py-2">
-          <a href="#" class="text-2xl my-2">
+          <a href="#" class="text-xl font-extrabold text-white my-2">
             The Downsides of AI Artistry
           </a>
           <p class="text-gray-300">
             What are the possible adverse effects of on-demand AI image generation?
           </p>
         </article>
-        <hr>
+        <hr class="text-white opacity-25 my-4">
         <article class="new-article py-2">
-          <a href="#" class="text-2xl my-2">
+          <a href="#" class="text-xl font-extrabold text-white my-2">
             Is VC Funding Drying Up?
           </a>
           <p class="text-gray-300">
@@ -113,31 +113,31 @@
           <img src="/news-homepage/images/image-retro-pcs.jpg" alt=""
             class="w-24"/>
           <div>
-            <span class="text-gold-400 text-xl font-bold">01</span>
-            <a href="#">Reviving Retro PCs</a>
-            <p class="text-gray-600 text-sm">What happens when old PCs are given modern upgrades?</p>
+            <p class="text-red-500 text-3xl font-bold">01</p>
+            <a class='text-navy-950 font-extrabold' href="#">Reviving Retro PCs</a>
+            <p class="text-navy-600 text-sm">What happens when old PCs are given modern upgrades?</p>
           </div>
         </article>
         <article class="flex gap-4 my-4">
           <img src="/news-homepage/images/image-top-laptops.jpg" alt=""
             class="w-24"/>
           <div>
-          <span class="text-gold-400 text-xl font-bold">02</span>
-          <a href="#">Top 10 Laptops of 2022</a>
-          <p class="text-gray-600 text-sm">Our best picks for various needs and budgets.</p>
+          <p class="text-red-500 text-3xl font-bold">02</p>
+          <a class='text-navy-950 font-extrabold' href="#">Top 10 Laptops of 2022</a>
+          <p class="text-navy-600 text-sm">Our best picks for various needs and budgets.</p>
           </div>
         </article>
         <article class="flex gap-4 my-4">
           <img src="/news-homepage/images/image-gaming-growth.jpg" alt=""
             class="w-24"/>
           <div>
-          <span class="text-gold-400 text-xl font-bold">03</span>
-          <a href="#">The Growth of Gaming</a>
-          <p class="text-gray-600 text-sm">How the pandemic has sparked fresh opportunities.</p>
+          <p class="text-red-500 text-3xl font-bold">03</p>
+          <a class='text-navy-950 font-extrabold' href="#">The Growth of Gaming</a>
+          <p class="text-navy-600 text-sm">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </article>
       </section>      
       </main>
-
+    </div>
   </body>
 </html>
