@@ -1,17 +1,16 @@
-p {
-    font-size: 15px;
-}
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
     width: 100%;
 }
+.app {
+    margin-inline: clamp(1rem, 18vw - 55px, 5rem);
+}
 main {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +22,7 @@ main {
 
 header {
     width: 100%;
+    max-width: 1100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,8 +30,11 @@ header {
     .menu {
         display: none;
     }
-    img {
-        height: 1.4rem; 
+    & > img {
+        width: 45px; 
+    }
+    button {
+        width: 40px;
     }
     button:hover, button:focus {
         cursor: pointer;
@@ -40,7 +43,7 @@ header {
 nav {
     .lightbox {
         position: fixed;
-        width: 60vw;
+        width: clamp(256px, 60vw, 320px);
         height: 100vh;
         top: 0;
         right: 0;
@@ -48,7 +51,6 @@ nav {
         z-index: 2;
     }
     .nav-close-icon {
-        display: block;
         margin: 1rem;
         width: 30px;
         height: 30px;
@@ -61,7 +63,16 @@ nav {
         outline: none;
     }
 }
+section {
+    width: 100%;
+}
+
 @media (min-width: 50rem){
+    header {
+        img {
+            width: 64px;
+        }
+    }
     nav {
         display: flex;
         flex-direction: row;
